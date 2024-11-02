@@ -2,19 +2,49 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>IME制御サンプル</title>
   </head>
   <body>
     <form class="form">
-      <label>
-        <span>inputmode=指定なし</span>
-        <input type="text" />
+      <label class="field">
+        <span>inputmode="none"</span>
+        <input type="text" inputmode="none" />
       </label>
-      <label>
-        <span>inputmode=numeric</span>
+      <label class="field">
+        <span>inputmode="text"</span>
+        <input type="text" inputmode="text" />
+      </label>
+      <label class="field">
+        <span>inputmode="decimal"</span>
+        <!-- NOTE: Macだとフォーカスを当ててもIMEがoffにならない。。 -->
+        <input type="text" inputmode="decimal" />
+      </label>
+      <label class="field">
+        <span>inputmode="numeric"</span>
         <!-- NOTE: Macだとフォーカスを当ててもIMEがoffにならない。。 -->
         <input type="text" inputmode="numeric" />
+      </label>
+      <label class="field">
+        <span>inputmode="tel"</span>
+        <!-- NOTE: Macだとフォーカスを当ててもIMEがoffにならない。。 -->
+        <input type="text" inputmode="tel" />
+      </label>
+      <label class="field">
+        <span>inputmode="search"</span>
+        <!-- NOTE: Macだとフォーカスを当ててもIMEがoffにならない。。 -->
+        <input type="text" inputmode="search" />
+      </label>
+      <label class="field">
+        <span>inputmode="email"</span>
+        <!-- NOTE: Macだとフォーカスを当ててもIMEがoffにならない。。 -->
+        <input type="text" inputmode="email" />
+      </label>
+      <label class="field">
+        <span>inputmode="url"</span>
+        <!-- NOTE: Macだとフォーカスを当ててもIMEがoffにならない。。 -->
+        <input type="text" inputmode="url" />
       </label>
     </form>
   </body>

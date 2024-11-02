@@ -1,5 +1,11 @@
 .form {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 5px;
+  display: inline grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 20px;
+  .field {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: span 2;
+  }
 }
